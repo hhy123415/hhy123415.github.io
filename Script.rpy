@@ -13,7 +13,7 @@ define h = Character("凌音")
 define i = Character("健二")
 define hc = Character("白晓&凌音")
 define gein = Character("盖茵")
-define mon = Character("野兽")
+define mons = Character("野兽")
 
 # 游戏在此开始。
 define x = 0
@@ -590,7 +590,7 @@ label another:
     a "呵呵，小子，看起来你是真的什么都不知道啊。不过没关系，我会告诉你关于你被世界抛弃的真相，而我，立志改变这个腐朽的世界，需要你成为我的利刃，如何？"
     "思索了片刻，我决定抓住那个男人伸出的手。"
     a "对了，你可以称呼我为————"
-    mon "‘野兽’"
+    mons "‘野兽’"
     return
 
 label danger:
