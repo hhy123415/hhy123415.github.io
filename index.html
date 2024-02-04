@@ -270,7 +270,7 @@
             <p style="text-align: center;">
                 <a href="/2024/02/04/%E5%B0%8F%E8%AF%B4%EF%BC%9A%E6%9B%99%E5%85%89%E7%9A%84%E4%B9%90%E5%9B%AD/">
                     
-                    <img src="/imgs/preview/preview4.jpg" alt="小说：曙光的乐园">
+                    <img src="/imgs/preview/preview1.jpg" alt="小说：曙光的乐园">
                 </a>
             </p>
         </div>
@@ -308,6 +308,8 @@
 </div>
 
 <!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+  
+    <div id="comments-template" style="display:none"></div> 
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -412,7 +414,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 10.303976438688945px;" class="tag-cloud-link">小说</a>
+    <a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 15.743597350594872px;" class="tag-cloud-link">小说</a>
     
 </div>
                 
@@ -495,6 +497,30 @@
 <script src="/js/oni.js"></script>
 
 
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = 'hhy123415'
+      window.commentConfig.repo = 'website_repo'
+      window.commentConfig.client_id = '4c718bc3dd27fcace5fd'
+      window.commentConfig.client_secret = '456af4a70e3ac1a92bcb91795db05b1f82a53569'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: 'hhy123415',
+        repo: 'website_repo',
+        client_id: '4c718bc3dd27fcace5fd',
+        client_secret: '456af4a70e3ac1a92bcb91795db05b1f82a53569',
+        redirect_uri: ''
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
 
 
 </html>
