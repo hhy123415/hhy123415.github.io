@@ -301,19 +301,24 @@ var galTheme = {
 
 if ($('#comments-template')) {
 
-	var gitment = new Gitment({
-		id: window.commentConfig.id,
-		owner: window.commentConfig.owner,
-		repo: window.commentConfig.repo,
-		oauth: {
-			client_id: window.commentConfig.client_id,
-			client_secret: window.commentConfig.client_secret
-		},
-		perPage: 10,
-		title: window.commentConfig.title,
-		theme: galTheme
-	})
-
+	< !--Gitment评论插件通用代码 -->
+<div id="git"></div>
+<!--汉化版 -->
+		<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+			<script src="https://billts.site/js/gitment.js"></script>
+			<script>
+				var gitment = new Gitment({
+					id: '{{ page.date }}', //添加此句解决Error：validation failed的问题
+				owner: "hhy123415",//github用户名，例如MIKQUEENGE
+				repo: "website_repo",//用户存储评论的github项目名称，例如MIKQUEENGE.github.io
+				oauth: {
+					client_id: "4c718bc3dd27fcace5fd",//注册OAuth Application时生产的ClinetID
+				client_secret:"456af4a70e3ac1a92bcb91795db05b1f82a53569",//注册OAuth Application时生成的Client Secret
+  },
+})
+				gitment.render('git')
+			</script>
+			<!-- Gitment代码结束 -->
 	gitment.render('comments-template')
 }
 
