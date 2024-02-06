@@ -3,7 +3,7 @@
 # 声明此游戏使用的角色。颜色参数可使角色姓名着色。
 
 define a = Character("？？？")
-define b = Character("韩宏有")
+define b = Character("陈传航")
 define c = Character("白晓")
 define d = Character("志豪")
 define e = Character("芙兰")
